@@ -1,80 +1,82 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* Animated Mesh Gradient Background */
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-:root {
-  --background: 220 10% 8%; /* Deep Dark Blue */
-  --foreground: 0 0% 98%; /* White */
-  --card: 216 15% 12%; /* Slightly lighter dark blue */
-  --card-foreground: 0 0% 98%; /* White */
-  --popover: 216 15% 12%; /* Popover background */
-  --popover-foreground: 0 0% 98%; /* Popover text */
-  --primary: 210 90% 50%; /* Electric Blue */
-  --primary-foreground: 0 0% 98%; /* White */
-  --secondary: 210 20% 25%; /* Muted Blue */
-  --secondary-foreground: 0 0% 98%; /* White */
-  --muted: 215 15% 30%; /* Light Gray */
-  --muted-foreground: 215 15% 60%; /* Darker Gray */
-  --accent: 150 80% 40%; /* Vibrant Green */
-  --accent-foreground: 0 0% 10%; /* Black */
-  --destructive: 0 80% 50%; /* Red */
-  --destructive-foreground: 0 0% 98%; /* White */
-  --border: 215 15% 20%; /* Subtle Blue-Gray */
-  --input: 215 15% 20%; /* Input border */
-  --ring: 210 90% 60%; /* Focus ring */
-  --radius: 0.75rem; /* Border radius for components */
-}
-
-/* Dark theme variables for consistency, though we are primarily dark */
-.dark {
-  --background: 220 10% 8%;
-  --foreground: 0 0% 98%;
-  --card: 216 15% 12%;
-  --card-foreground: 0 0% 98%;
-  --popover: 216 15% 12%;
-  --popover-foreground: 0 0% 98%;
-  --primary: 210 90% 50%;
-  --primary-foreground: 0 0% 98%;
-  --secondary: 210 20% 25%;
-  --secondary-foreground: 0 0% 98%;
-  --muted: 215 15% 30%;
-  --muted-foreground: 215 15% 60%;
-  --accent: 150 80% 40%;
-  --accent-foreground: 0 0% 10%;
-  --destructive: 0 80% 50%;
-  --destructive-foreground: 0 0% 98%;
-  --border: 215 15% 20%;
-  --input: 215 15% 20%;
-  --ring: 210 90% 60%;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background: linear-gradient(
-      135deg,
-      hsl(220 10% 8%) 0%,   /* Dark Blue */
-      hsl(240 15% 12%) 20%,  /* Darker Purple */
-      hsl(280 60% 30%) 40%,  /* Magenta */
-      hsl(150 80% 40%) 60%,  /* Green */
-      hsl(200 90% 50%) 80%,  /* Cyan */
-      hsl(220 10% 8%) 100%   /* Dark Blue */
-    )
-    no-repeat;
-  background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
-  color: hsl(var(--foreground)); /* Ensure text color is set globally */
-  min-height: 100vh;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animated Mesh Gradient Background */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+:root {
+  --background: 220 10% 8%; /* Deep Dark Blue */
+  --foreground: 0 0% 98%; /* White */
+  --card: 216 15% 12%; /* Slightly lighter dark blue */
+  --card-foreground: 0 0% 98%; /* White */
+  --popover: 216 15% 12%; /* Popover background */
+  --popover-foreground: 0 0% 98%; /* Popover text */
+  --primary: 210 90% 50%; /* Electric Blue */
+  --primary-foreground: 0 0% 98%; /* White */
+  --secondary: 210 20% 25%; /* Muted Blue */
+  --secondary-foreground: 0 0% 98%; /* White */
+  --muted: 215 15% 30%; /* Light Gray */
+  --muted-foreground: 215 15% 60%; /* Darker Gray */
+  --accent: 150 80% 40%; /* Vibrant Green */
+  --accent-foreground: 0 0% 10%; /* Black */
+  --destructive: 0 80% 50%; /* Red */
+  --destructive-foreground: 0 0% 98%; /* White */
+  --border: 215 15% 20%; /* Subtle Blue-Gray */
+  --input: 215 15% 20%; /* Input border */
+  --ring: 210 90% 60%; /* Focus ring */
+  --radius: 0.75rem; /* Border radius for components */
+}
+
+/* Dark theme variables for consistency, though we are primarily dark */
+.dark {
+  --background: 220 10% 8%;
+  --foreground: 0 0% 98%;
+  --card: 216 15% 12%;
+  --card-foreground: 0 0% 98%;
+  --popover: 216 15% 12%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 210 90% 50%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 210 20% 25%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 215 15% 30%;
+  --muted-foreground: 215 15% 60%;
+  --accent: 150 80% 40%;
+  --accent-foreground: 0 0% 10%;
+  --destructive: 0 80% 50%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 215 15% 20%;
+  --input: 215 15% 20%;
+  --ring: 210 90% 60%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(
+      135deg,
+      hsl(220 10% 8%) 0%,   /* Dark Blue */
+      hsl(240 15% 12%) 20%,  /* Darker Purple */
+      hsl(280 60% 30%) 40%,  /* Magenta */
+      hsl(150 80% 40%) 60%,  /* Green */
+      hsl(200 90% 50%) 80%,  /* Cyan */
+      hsl(220 10% 8%) 100%   /* Dark Blue */
+    )
+    no-repeat;
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  color: hsl(var(--foreground)); /* Ensure text color is set globally */
+  min-height: 100vh;
 }

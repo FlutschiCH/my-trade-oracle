@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 # CoBuild AI internal context
 brain/
+# CoBuild AI internal context
+.deleted_files/
+.ai-agent-instructions.md
